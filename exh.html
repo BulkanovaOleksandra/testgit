@@ -7,15 +7,26 @@
     body {
       background-image: url('images/bg.jpg');
       background-size: cover;
-      font-family: Verdana;
-      color: #111;
+      font-family: Verdana, sans-serif;
+      background-color: #fdf6f0;
+    }
+    nav a {
+      margin: 10px;
+      color: darkblue;
+      text-decoration: none;
     }
     table, td, th {
       border: 1px solid #444;
       border-collapse: collapse;
       padding: 8px;
     }
-    th { background-color: #ddd; }
+    caption {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    th {
+      background-color: #ddd;
+    }
   </style>
 </head>
 <body>
@@ -46,6 +57,64 @@
       <td>Young Artists</td>
       <td>July 1, 2025</td>
       <td>Gallery Room 2</td>
+    </tr>
+  </table>
+
+  <h2>Gallery Table</h2>
+  <table>
+    <caption>Gallery Artwork Info</caption>
+    <tr style="background-color: #cceeff;">
+      <th>Artwork 1</th>
+      <th>Artwork 2</th>
+      <th>Artwork 3</th>
+      <th>Artwork 4</th>
+    </tr>
+    <tr>
+      <td><img src="images/art1-small.jpg" width="100" alt="Art 1"></td>
+      <td><img src="images/art2-small.jpg" width="100" alt="Art 2"></td>
+      <td><img src="images/art3-small.jpg" width="100" alt="Art 3"></td>
+      <td><img src="images/art4-small.jpg" width="100" alt="Art 4"></td>
+    </tr>
+    <tr>
+      <td><a href="images/art1.jpg" target="_blank">View full</a></td>
+      <td><a href="images/art2.jpg" target="_blank">View full</a></td>
+      <td><a href="images/art3.jpg" target="_blank">View full</a></td>
+      <td><a href="images/art4.jpg" target="_blank">View full</a></td>
+    </tr>
+    <tr>
+      <td>Impressionism</td>
+      <td>Realism</td>
+      <td>Modern Art</td>
+      <td>Classic</td>
+    </tr>
+  </table>
+
+  <h2>Advanced Exhibition Table</h2>
+  <table border="1" cellspacing="10" cellpadding="8" style="width: 90%; border-collapse: collapse;">
+    <caption style="font-size: 1.2em; font-weight: bold;">Exhibition Floor Plan</caption>
+
+    <colgroup>
+      <col span="1" style="background-color: #f9e6e6;">
+      <col span="1" style="background-color: #e6f9e6;">
+      <col span="1" style="background-color: #e6e6f9;">
+    </colgroup>
+
+    <tr>
+      <th colspan="3" style="text-align: center; background-color: #ddd;">Main Gallery Layout</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2" style="text-align: center;">Entrance</td>
+      <td style="text-align: left;">Painting Hall A</td>
+      <td rowspan="2" style="text-align: center;">Storage</td>
+    </tr>
+
+    <tr>
+      <td style="text-align: right;">Sculpture Hall B</td>
+    </tr>
+
+    <tr>
+      <td colspan="3" style="text-align: right;">→ Exit</td>
     </tr>
   </table>
 
