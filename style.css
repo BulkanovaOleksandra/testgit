@@ -39,7 +39,14 @@ body {
     line-height: 1.4;
     text-align: center;
   }
-  
+    
+  .main-title {
+    font-size: 32px;
+    color: #0066cc;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+  }
   a {
     color: green 
   }
@@ -89,5 +96,19 @@ body {
   td {
     background-color: #f9f9f9;
   }
-
+  .gallery-item img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /*??????*/
+  }
+  span{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
   
+  }
+
+  div#floating{
+    float: left;
+    }

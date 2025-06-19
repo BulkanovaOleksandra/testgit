@@ -16,6 +16,9 @@
       p {
         color:blueviolet;
       }
+      div p {
+        color: blue;
+      }
     </style>
   </head>
   <body>
@@ -27,19 +30,23 @@
       <a href="exh.html">Exhibitions</a>
       <a href="contacts.html">Contacts</a>
     </nav>
-
+      
     <p><b>Address:</b> 12 Art Street, Kyiv, Ukraine</p>
     <p><b>Email:</b> gallery@example.com</p>
     <p><b>Phone:</b> +380 44 123 4567</p>
+<div> <p>your phone for feetback:</p>
+  <p><input type="number" value="your phone for feetback"></p>
+</div>
 
     <h3>How to find us:</h3>
 
-    <iframe
+    <iframe id="floating" style="float: left; margin: 0 0 20px 20px;"
       width="400"
       height="300"
       allowfullscreen
       src="https://maps.google.com/maps?q=Kyiv&output=embed"
     ></iframe>
+
   </body>
 </html>
 
