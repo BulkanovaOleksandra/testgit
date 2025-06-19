@@ -6,13 +6,12 @@
   <link rel="stylesheet" href="style.css">
   <style>
     b + i {
-      color: red;
-    }
-
-     nav a {
+   color: red;
+  }
+  nav a {
     color: purple !important;
   }
-    body {
+  body {
       background-color: #fdf6f0;
       font-family: Arial;
       color: #333;
@@ -25,23 +24,32 @@
     a:hover {
       text-decoration: underline;
     }
-  </style>
+    .example a {
+      font-style: italic;
+    }
+</style>
 </head>
 <body link="red", vlink="blue", alink="pink">
 
-  <h1>Welcome to Our Art Gallery</h1>¨
-  <p>something</p>
+  <h1 id="main-title">Welcome to Our Art Gallery</h1>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="exh.html">Exhibitions</a>
-    <a href="contacts.html">Contacts</a>
+  <nav class="example">
+    <a class="links" href="index.html">Home</a>
+    <a class="links" href="about.html">About</a>
+    <a class="links" href="exh.html">Exhibitions</a>
+    <a class="links" href="contacts.html">Contacts</a>
   </nav>
 
-  <p><b>Our gallery</b> is a place where art, beauty, and history meet.</p>
+
+  <p><b><a href="about.html">Our gallery</a></b> is a place where art, beauty, and history meet.</p>
   <p><i>Experience </i> <b>the atmosphere of cultural heritage through</b> <i>painting, graphics, and sculpture. <a href="exh.html">Also
      you can view our next exhibitions</i></a></p>
+ 
+  <ol>
+    <li><strong>Landscapes of Emotion</strong> — July 10–August 15</li>
+    <li><strong>Modern Sculpture Dialogues</strong> — September 1–October 5</li>
+    <li><strong>Hidden Faces: The Portrait Reimagined</strong> — November 12–December 20</li>
+  </ol>
 
   <h2>Sample Exhibit</h2>
   <a href="images/painting-full.jpg" target="_blank">
@@ -50,3 +58,4 @@
 
 </body>
 </html>
+
