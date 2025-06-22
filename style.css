@@ -14,10 +14,10 @@ body {
     font-family: Georgia, serif;
   }
   
-  a {
+  /* a {
     color: #0066cc !important;
     text-decoration: none;
-  }
+  } */
 
   
   .title {
@@ -100,15 +100,28 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    position: relative; /*??????*/
+  }
+  .gallery-item{
+    background-color: #003366;
+
   }
   span{
-    display: block;
     text-align: center;
     margin: 0 auto;
-  
+    background-color: yellow;
   }
 
   div#floating{
     float: left;
-    }
+    } /*float*/
+
+  .block {
+    position: relative;
+    top: 10px;
+    left: 20px;
+  } /*використовую position*/
+
+  p.new::after{
+    content:'type ukrainian phone';
+  }
+  

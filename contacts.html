@@ -19,10 +19,20 @@
       div p {
         color: blue;
       }
+      p{
+        text-indent: 0%;
+      }
+      h1:first-child{
+        text-indent: 1em;
+      }
+      .contact-info::before {
+        content: "\20aa ";
+      }      
     </style>
   </head>
   <body>
     <h1>Contact Information</h1>
+    <h1>for our gallery</h1>
 
     <nav>
       <a href="index.html">Home</a>
@@ -30,12 +40,12 @@
       <a href="exh.html">Exhibitions</a>
       <a href="contacts.html">Contacts</a>
     </nav>
-      
-    <p><b>Address:</b> 12 Art Street, Kyiv, Ukraine</p>
-    <p><b>Email:</b> gallery@example.com</p>
-    <p><b>Phone:</b> +380 44 123 4567</p>
+
+    <p class="contact-info"><b>Address:</b> 12 Art Street, Kyiv, Ukraine</p>
+    <p class="contact-info"><b>Email:</b> gallery@example.com</p>
+    <p class="contact-info"><b>Phone:</b> +380 44 123 4567</p>
 <div> <p>your phone for feetback:</p>
-  <p><input type="number" value="your phone for feetback"></p>
+  <p class="new"><input type="number" value="your phone for feetback"></p> 
 </div>
 
     <h3>How to find us:</h3>
