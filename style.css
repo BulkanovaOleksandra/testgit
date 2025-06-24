@@ -121,7 +121,7 @@ body {
     left: 20px;
   } /*використовую position*/
 
-  p.new::after{
+  p.new:after{
     content:'type ukrainian phone';
   }
   
